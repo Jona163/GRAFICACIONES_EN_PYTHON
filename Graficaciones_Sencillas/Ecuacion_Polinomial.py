@@ -1,5 +1,4 @@
-
-#POLINOMIAL XD
+#POLINOMIAL 
 
 import numpy as np
 import animatplot as amp
@@ -32,3 +31,16 @@ X_p = boston.data[:, np.newaxis, 5]
 y_p = boston.target
 #Graficamos los datos correspondientes
 plt.scatter(X_p, y_p)
+plt.show()
+########## IMPLEMENTACIÓN DE REGRESIÓN POLINOMIAL ##########
+from sklearn.model_selection import train_test_split
+#Separo los datos de "train" en entrenamiento y prueba para probar los algoritmos
+X_train_p, X_test_p, y_train_p, y_test_p = train_test_split(X_p, y_p, test_size=0.2)
+from sklearn.preprocessing import PolynomialFeatures
+#Se define el grado del polinomio
+poli_reg = PolynomialFeatures(degree = 2)
+#Se transforma las características existentes en características de mayor grado
+X_train_poli = poli_reg.fit_transform(X_train_p)
+X_test_poli = poli_reg.fit_transform(X_test_p)
+#Defino el algoritmo a utilizar
+pr = linear_model.LinearRegression()
