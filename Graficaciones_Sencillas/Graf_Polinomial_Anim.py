@@ -17,3 +17,10 @@ timeline = amp.Timeline(t, units="s",fps=60)
 #Generamos animacion
 block = amp.blocks.Line(X,Y,marker=".",linestyle="-",color="r")
 anim = amp.Animation([block],timeline)
+#Definicion de etiqueta para titulo y ejes
+ptl.title("Graficacion Polinomial")
+ptl.xlabel("x")
+ptl.ylabel("y")
+
+#Guardamos la animacion
+anim.save_gif('graph_anim.gif')
