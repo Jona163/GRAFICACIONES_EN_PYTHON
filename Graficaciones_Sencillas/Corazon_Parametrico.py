@@ -1,4 +1,4 @@
-#Corqzon Parametrico
+#Corazon Parametrico
 import turtle
 import time
 
