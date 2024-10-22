@@ -1,3 +1,8 @@
+# Autor: Jonathan Hernández
+# Fecha: 22 octubre 2024
+# Descripción: Graficaciones Sencillas.
+# GitHub: https://github.com/Jona163
+
 #Ecuacion Cuadratica
 import math as m
 import numpy as np
