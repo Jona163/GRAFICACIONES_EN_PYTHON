@@ -15,3 +15,20 @@ print()
 print('Información en el dataset:')
 print(boston.keys())
 print()
+#Verifico las características del dataset
+print('Características del dataset:')
+print(boston.DESCR)
+#Verifico la cantidad de datos que hay en los dataset
+print('Cantidad de datos:')
+print(boston.data.shape)
+print()
+#Verifico la información de las columnas
+print('Nombres columnas:')
+print(boston.feature_names)
+########## PREPARAR LA DATA REGRESIÓN POLINOMIAL ##########
+#Seleccionamos solamente la columna 6 del dataset
+X_p = boston.data[:, np.newaxis, 5]
+#Defino los datos correspondientes a las etiquetas
+y_p = boston.target
+#Graficamos los datos correspondientes
+plt.scatter(X_p, y_p)
