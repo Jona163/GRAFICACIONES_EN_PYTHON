@@ -24,3 +24,10 @@ ptl.ylabel("y")
 
 #Guardamos la animacion
 anim.save_gif('graph_anim.gif')
+
+#Introducimos linea de tiempo
+#Y boton Pause/Play
+anim.controls()
+
+#Representamos grafica.
+ptl.show()
