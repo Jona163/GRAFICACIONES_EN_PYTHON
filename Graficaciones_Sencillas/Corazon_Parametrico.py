@@ -1,3 +1,8 @@
+# Autor: Jonathan Hernández
+# Fecha: 22 octubre 2024
+# Descripción: Graficaciones Sencillas.
+# GitHub: https://github.com/Jona163
+
 #Corazon Parametrico
 import turtle
 import time
