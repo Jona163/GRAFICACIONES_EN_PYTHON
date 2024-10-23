@@ -21,3 +21,13 @@ anim = amp.Animation([block],timeline)
 plt.title("GRAFICACION XD")
 plt.xlabel("x")
 plt.ylabel("y")
+
+#GUARDAMOS ANIMACIÓN.
+anim.save_gif('graph_anim.gif')
+
+#INTRODUCIMOS LÍNEA DE TIEMPO
+#Y BOTÓN PAUSE/PLAY
+anim.controls()
+
+#REPRESENTAMOS GRÁFICA.
+plt.show()
