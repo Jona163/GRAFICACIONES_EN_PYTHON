@@ -38,3 +38,9 @@ for i in range(200):  # Aumentar el número de iteraciones para un girasol más 
             turtle.forward(70)
             turtle.left(140)
         turtle.end_fill()
+
+# Esconder la tortuga al final
+turtle.hideturtle()
+
+# Mantener la ventana abierta
+turtle.done()
