@@ -11,3 +11,6 @@ x = range(-10, 10)
 pyplot.plot(x, [f1(i) for i in x])
 #pyplot.plot(x, [f2(i) for i in x])
 # Establecer el color de los ejes.
+pyplot.axhline(0, color="black")
+pyplot.axvline(0, color="black")
+# Limitar los valores de los ejes.
