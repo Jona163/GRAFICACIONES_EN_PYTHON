@@ -12,3 +12,12 @@ Y = np.sin(0*np.pi*(X+T))
 
 #CREAMOS OBJETO "timeline".
 timeline = amp.Timeline(t, units='s', fps=20)
+
+#GENERAMOS ANIMACIÓN.
+block = amp.blocks.Line(X, Y, marker=".", linestyle="-", color="r")
+anim = amp.Animation([block],timeline)
+
+#DEFINICIÓN DE ETIQUETAS PARA TITULO Y EJES.
+plt.title("GRAFICACION XD")
+plt.xlabel("x")
+plt.ylabel("y")
