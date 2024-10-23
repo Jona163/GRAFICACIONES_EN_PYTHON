@@ -14,3 +14,6 @@ pyplot.plot(x, [f1(i) for i in x])
 pyplot.axhline(0, color="black")
 pyplot.axvline(0, color="black")
 # Limitar los valores de los ejes.
+pyplot.xlim(0, 3)
+pyplot.ylim(4, 9)
+# Guardar gráfico como imágen PNG.
