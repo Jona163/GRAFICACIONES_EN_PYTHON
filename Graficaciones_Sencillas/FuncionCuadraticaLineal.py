@@ -17,3 +17,6 @@ pyplot.axvline(0, color="black")
 pyplot.xlim(0, 3)
 pyplot.ylim(4, 9)
 # Guardar gráfico como imágen PNG.
+pyplot.savefig("output.png")
+# Mostrarlo.
+pyplot.show()
