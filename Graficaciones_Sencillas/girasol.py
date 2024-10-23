@@ -33,3 +33,8 @@ for i in range(200):  # Aumentar el número de iteraciones para un girasol más 
         turtle.fillcolor("yellow")  # Cambiar el color a amarillo para los pétalos
         turtle.begin_fill()
         for _ in range(2):  # Dibujar el pétalo
+            turtle.forward(70)
+            turtle.left(40)
+            turtle.forward(70)
+            turtle.left(140)
+        turtle.end_fill()
