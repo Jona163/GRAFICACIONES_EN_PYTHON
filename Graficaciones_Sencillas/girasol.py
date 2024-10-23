@@ -15,3 +15,13 @@ phi = 137.5 * (math.pi / 180.0)  # Convertimos a radianes
 for i in range(200):  # Aumentar el número de iteraciones para un girasol más completo
     r = 4 * math.sqrt(i)  # Calcular el radio para la posición
     theta = i * phi  # Calcular el ángulo
+
+    # Calcular las coordenadas x, y
+    x = r * math.cos(theta)
+    y = r * math.sin(theta)
+
+    # Mover la tortuga a la nueva posición
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.setheading(i * 137.5)  # Orientar la tortuga
+    turtle.pendown()
