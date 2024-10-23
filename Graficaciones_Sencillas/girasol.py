@@ -25,3 +25,11 @@ for i in range(200):  # Aumentar el número de iteraciones para un girasol más 
     turtle.goto(x, y)
     turtle.setheading(i * 137.5)  # Orientar la tortuga
     turtle.pendown()
+
+    # Dibujar el centro o los pétalos
+    if i < 100:  # Los primeros 100 serán el centro del girasol
+        turtle.stamp()
+    else:
+        turtle.fillcolor("yellow")  # Cambiar el color a amarillo para los pétalos
+        turtle.begin_fill()
+        for _ in range(2):  # Dibujar el pétalo
