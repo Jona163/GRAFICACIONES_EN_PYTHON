@@ -5,3 +5,9 @@ def f1(x):
 # Función lineal.
 def f2(x):
     return 4*x + 1
+# Valores del eje X que toma el gráfico.
+x = range(-10, 10)
+# Graficar ambas funciones.
+pyplot.plot(x, [f1(i) for i in x])
+#pyplot.plot(x, [f2(i) for i in x])
+# Establecer el color de los ejes.
